@@ -23,7 +23,7 @@ setup(
     author_email='bsd@voltaire.sh',
     classifiers=[
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: POSIX :: Linux',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
