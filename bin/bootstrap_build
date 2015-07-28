@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 from cookiecutter.main import cookiecutter
+from docku.build import BuildConfig
 
 
 def parse_args():
@@ -19,8 +20,7 @@ def parse_args():
 
 
 def main(args):
-    with open(args.config) as fh:
-        extra_content = json.load(fh)
+    extra_context = BuildConfig(args.config)
     cookiecutter(
         'https://github.com/docku/cookiecutter-builder.git',
         extra_context=extra_context)
