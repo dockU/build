@@ -14,4 +14,4 @@ class BuildConfig(dict):
         for key in keys:
             value = os.getenv(key)
             if value:
-                self[key] = value
+                self[key.lower()] = value
