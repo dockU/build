@@ -23,7 +23,8 @@ def main(args):
     extra_context = BuildConfig(args.config)
     cookiecutter(
         'https://github.com/docku/cookiecutter-builder.git',
-        extra_context=extra_context)
+        extra_context=extra_context,
+        no_input=True)
 
 
 if __name__ == '__main__':
