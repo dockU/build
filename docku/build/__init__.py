@@ -6,7 +6,10 @@ class BuildConfig(dict):
         cc = {}
         with open(path) as fh:
             cc = json.load(fh)
-        super().__init__(cc)
+        try:  # py3
+            super().__init__(cc)
+        except TypeError:  # py2
+            super(BuildConfig, self).__init__(cc)
         self.populate_envvars()
 
     def populate_envvars(self):
