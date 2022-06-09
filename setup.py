@@ -32,7 +32,7 @@ setup(
         'Programming Language :: Python :: 3.4',
     ],
     install_requires=[
-        'cookiecutter==1.0.0',
+        'cookiecutter==2.1.1',
     ],
     scripts=[
         'bin/bootstrap_build',
